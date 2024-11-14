@@ -51,7 +51,8 @@ for label in pca_df['label'].unique():
         pca_df.loc[pca_df['label'] == label, 'PC1'],
         pca_df.loc[pca_df['label'] == label, 'PC2'],
         label=label,
-        color=colors[label]
+        color=colors[label],
+        s=10
     )
 
 plt.title('PCA of FTIR Data')
